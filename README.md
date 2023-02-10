@@ -1,4 +1,4 @@
-![Logo](./.github/flag.png)
+![Logo](https://github.com/pauli2406/country_flags_flutter_/blob/stable/.github/flag.png)
 
 # Country Flags Flutter 
 #### (Fork from flag as it was not maintained anymore)
