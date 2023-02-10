@@ -1,6 +1,6 @@
 name: country_flags_flutter
 description: A flag flutter package. Use for showing flags. All flags came from https://github.com/lipis/flag-icons/releases/tag/v4.1.4 .
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/pauli2406/country_flags_flutter_
 
 environment:
