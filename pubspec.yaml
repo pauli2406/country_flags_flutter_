@@ -1,7 +1,7 @@
-name: flag
-description: A flag Flutter package. Use for showing flags. All flags came from https://github.com/lipis/flag-icons/releases/tag/v4.1.4 .
-version: 6.0.0
-homepage: https://github.com/LunaGao/flag_flutter
+name: country_flags_flutter
+description: A flag flutter package. Use for showing flags. All flags came from https://github.com/lipis/flag-icons/releases/tag/v4.1.4 .
+version: 1.0.0
+homepage: https://github.com/pauli2406/country_flags_flutter_
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
