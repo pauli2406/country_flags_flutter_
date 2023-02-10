@@ -4,6 +4,7 @@ import 'package:flag/flags_clipper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:vector_graphics/vector_graphics.dart';
 
 /// A run of Flag.
 class Flags extends StatelessWidget {
@@ -109,9 +110,9 @@ class Flags extends StatelessWidget {
     List<Widget> flagWidgets = [];
     for (int i = 0; i < countryNames.length; i++) {
       var countryName = countryNames[i];
-      String assetName = 'packages/flag/res/4x3/$countryName.svg';
+      String assetName = 'packages/flag/res/4x3/$countryName.svg.vec';
       if (flagSize == FlagSize.size_1x1) {
-        assetName = 'packages/flag/res/1x1/$countryName.svg';
+        assetName = 'packages/flag/res/1x1/$countryName.svg.vec';
       }
 
       if (!flagsCode.contains(countryName)) {
@@ -122,8 +123,8 @@ class Flags extends StatelessWidget {
             Container(
               width: width,
               height: height,
-              child: SvgPicture.asset(
-                assetName,
+              child: SvgPicture(
+                AssetBytesLoader(assetName),
                 fit: BoxFit.fill,
               ),
             ),
@@ -137,8 +138,8 @@ class Flags extends StatelessWidget {
                 decoration: BoxDecoration(),
                 child: ClipPath(
                   clipper: FlagsClipper(),
-                  child: SvgPicture.asset(
-                    assetName,
+                  child: SvgPicture(
+                    AssetBytesLoader(assetName),
                     fit: BoxFit.fill,
                   ),
                 ),

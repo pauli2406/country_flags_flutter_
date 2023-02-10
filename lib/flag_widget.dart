@@ -3,6 +3,7 @@ import 'package:flag/flag_enum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:vector_graphics/vector_graphics.dart';
 
 /// A run of Flag.
 class Flag extends StatelessWidget {
@@ -105,23 +106,25 @@ class Flag extends StatelessWidget {
           EnumToString.convertToString(this.countryCode).toLowerCase();
     }
 
-    String assetName = 'packages/flag/res/4x3/$countryName.svg';
+    String assetName = 'packages/flag/res/4x3/$countryName.svg.vec';
     if (flagSize == FlagSize.size_1x1) {
-      assetName = 'packages/flag/res/1x1/$countryName.svg';
+      assetName = 'packages/flag/res/1x1/$countryName.svg.vec';
     }
 
     if (!flagsCode.contains(countryName)) {
       return replacement;
     }
 
+
+
     var returnWidget = Container(
       width: width,
       height: height,
-      child: SvgPicture.asset(
-        assetName,
+      child: SvgPicture(
+          AssetBytesLoader(assetName),
         semanticsLabel: country,
         fit: fit,
-      ),
+      )
     );
 
     if (borderRadius != null) {
@@ -131,20 +134,6 @@ class Flag extends StatelessWidget {
       );
     } else {
       return returnWidget;
-    }
-  }
-
-  static Future<void> preloadFlag({
-    required BuildContext context,
-    List<String> flagList = flagsCode,
-  }) async {
-    for (final flag in flagList) {
-      await precachePicture(
-          ExactAssetPicture(
-            SvgPicture.svgStringDecoderBuilder,
-            'packages/flag/res/4x3/$flag.svg',
-          ),
-          context);
     }
   }
 }

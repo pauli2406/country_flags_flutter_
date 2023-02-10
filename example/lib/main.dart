@@ -146,14 +146,6 @@ class _FlagPicker extends State<FlagPicker> {
   }
 
   @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    if (widget.preCache) {
-      Flag.preloadFlag(context: context);
-    }
-  }
-
-  @override
   void dispose() {
     _controller.dispose();
     super.dispose();

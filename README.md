@@ -1,7 +1,8 @@
 ![Logo](./.github/flag.png)
 
-# flag
-[![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)](https://pub.dev/packages/flag)
+# Country Flags Flutter 
+#### (Fork from flag as it was not maintained anymore)
+[![Pub Version](https://img.shields.io/pub/v/country_flags_flutter_?style=flat-square)](https://github.com/pauli2406/country_flags_flutter_)
 [![Bless](https://img.shields.io/badge/bless-God-brightgreen?style=flat-square)](https://lunagao.github.io/BlessYourCodeTag/)
 
 A flag Flutter package for `Android` / `iOS` / `Web`. Based by https://github.com/dnfield/flutter_svg .
