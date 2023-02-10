@@ -8,8 +8,8 @@
 A flag Flutter package for `Android` / `iOS` / `Web`. Based by https://github.com/dnfield/flutter_svg .
 
 ## Screenshot
-![Screenshot](./github/image.png)
-![Screenshot](./github/image_web.jpg)
+![Screenshot](https://github.com/pauli2406/country_flags_flutter_/blob/stable/github/image.png)
+![Screenshot](https://github.com/pauli2406/country_flags_flutter_/blob/stable/github/image_web.jpg))
 
 ## Svg sources
 * All flags came from https://github.com/lipis/flag-icons/releases/tag/v4.1.4
