@@ -24,7 +24,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flag:
+  country_flags_flutter:
     path: ../
 
 

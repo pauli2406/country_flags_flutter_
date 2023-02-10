@@ -1,5 +1,5 @@
 import 'package:example/restart_widget.dart';
-import 'package:flag/flag.dart';
+import 'package:country_flags_flutter/flag.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

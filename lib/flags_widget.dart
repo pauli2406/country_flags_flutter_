@@ -1,6 +1,6 @@
 import 'package:enum_to_string/enum_to_string.dart';
-import 'package:flag/flag_enum.dart';
-import 'package:flag/flags_clipper.dart';
+import 'package:country_flags_flutter/flag_enum.dart';
+import 'package:country_flags_flutter/flags_clipper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
